@@ -22,14 +22,14 @@ public class RssReaderServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		ArrayList<String> urlsToSend = new ArrayList<String>();
+		ArrayList<FeedMessage> urlsToSend = new ArrayList<FeedMessage>();
 		String url = request.getParameter("urlname");
 
 		RSSFeedParser parser = new RSSFeedParser(url);
 		Feed feed = parser.readFeed();
 		System.out.println(feed);
 		for (FeedMessage message : feed.getMessages()) {
-			urlsToSend.add(message.getGuid());
+			urlsToSend.add(message);
 		}
 
 		request.setAttribute("urls",urlsToSend);

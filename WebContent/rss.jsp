@@ -1,4 +1,4 @@
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,11 +6,12 @@
 <title>News Links</title>
 </head>
 <body>
-${urls}
-<%-- <c:forEach items="${urls}" var="url">
+
+<c:forEach items="${urls}" var="url">
     <tr>
-        <td> <c:out value="${url}"/></td>
+    	<a href="${url.getGuid()}">${url.getTitle()}</a>
+    	<% out.print("\n"); %>
     </tr>
-</c:forEach> --%>
+</c:forEach>
 </body>
 </html>
