@@ -14,13 +14,14 @@
 </style>
 </head>
 <body>
-<div class="jumbotron">
+<div class="jumbotron" style="padding-top:1%">
     <img src="BBC-Logo.png" class="rightShift"/>
     <p class="rightShift">
 This is an RSS feed from the BBC News - Home website. RSS feeds allow you to stay up to date with the latest news and features you want from BBC News - Home.
 To subscribe to it, you will need a News Reader or other similar device. If you would like to use this feed to display BBC News - Home content on your site, please go here.</p> 
 </div>
-<div class="row rightShift"><div class="col-sm-8">
+
+<div class="row rightShift"><div class="col-sm-7">
 	<c:forEach items="${urls}" var="url">
 	<div class="form-group">
 	 <a href="${url.getGuid()}" style="font-size: 20px;">${url.getTitle()}</a>

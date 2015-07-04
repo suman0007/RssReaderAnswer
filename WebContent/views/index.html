@@ -1,12 +1,16 @@
 <html>
-<head></head>
+<head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
 <body>
-<form action="getUrls" method="post">
-   <tr>
-      <td><font face="verdana" size="2px">Give a RSS URL</font></td>
-      <td><input type="text" name="urlname"></td>
-   </tr>
-      <input type="submit" value="getUrls">
+<form action="getUrls" class="form-inline" method="post">
+  <div class="form-group" style="padding-left:4%;padding-top:4%">
+    <label for="rss-url">RSS Url</label>
+    <input type="text" class="form-control" name="urlname" placeholder="Enter Url Here">
+    <button type="submit" value="getUrls" class="btn btn-success">Send invitation</button>
+  </div> 
 </form>
 </body>
 </html>
