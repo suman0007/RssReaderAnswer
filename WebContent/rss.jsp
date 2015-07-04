@@ -12,8 +12,11 @@
 
 <c:forEach items="${urls}" var="url">
     <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-12">
     	<a href="${url.getGuid()}">${url.getTitle()}</a>
+    </div>
+    <div class="col-sm-5">
+    ${url.getDescription()}
     </div>
     </div>
 </c:forEach>
