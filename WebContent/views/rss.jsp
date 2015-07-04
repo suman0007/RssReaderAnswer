@@ -28,7 +28,7 @@ To subscribe to it, you will need a News Reader or other similar device. If you 
     <div class="row col-sm-12">
    	<div class="col-sm-3"> <img src="${url.getThumbnil()}"/></div>
     <div class="col-sm-9">${url.getDescription()}</div>
-    </div></div>
+    </div><br><br></div>
 	</c:forEach>
 </div>
 </body>
