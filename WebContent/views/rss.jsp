@@ -21,14 +21,15 @@ This is an RSS feed from the BBC News - Home website. RSS feeds allow you to sta
 To subscribe to it, you will need a News Reader or other similar device. If you would like to use this feed to display BBC News - Home content on your site, please go here.</p> 
 </div>
 
-<div class="row rightShift"><div class="col-sm-7">
+<div class="row col-sm-8" style="padding-left:4%;">
 	<c:forEach items="${urls}" var="url">
 	<div class="form-group">
 	 <a href="${url.getGuid()}" style="font-size: 20px;">${url.getTitle()}</a>
-    <div>
-    ${url.getDescription()}
+    <div class="row col-sm-12">
+   	<div class="col-sm-3"> <img src="${url.getThumbnil()}"/></div>
+    <div class="col-sm-9">${url.getDescription()}</div>
     </div></div>
 	</c:forEach>
-</div></div>
+</div>
 </body>
 </html>
