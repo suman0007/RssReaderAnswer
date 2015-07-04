@@ -33,7 +33,7 @@ public class RssReaderServlet extends HttpServlet {
 		}
 
 		request.setAttribute("urls",urlsToSend);
-		request.getRequestDispatcher("/rss.jsp")
+		request.getRequestDispatcher("/views/rss.jsp")
 		.forward(request, response);
 
 	}
