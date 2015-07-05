@@ -12,6 +12,7 @@ public class FeedMessage {
   String guid;
   String image;
   String thumbnil;
+  String pubDate;
 
   public String getTitle() {
     return title;
@@ -67,6 +68,14 @@ public String getThumbnil() {
 
 public void setThumbnil(String thumbnil) {
 	this.thumbnil = thumbnil;
+}
+
+public String getPubDate() {
+	return pubDate;
+}
+
+public void setPubDate(String pubDate) {
+	this.pubDate = pubDate;
 }
 
 @Override

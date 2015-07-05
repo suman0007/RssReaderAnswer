@@ -129,8 +129,10 @@ public class RSSFeedParser {
             message.setThumbnil(thumbnil);
             message.setLink(link);
             message.setTitle(title);
+            message.setPubDate(pubdate);
             feed.getMessages().add(message);
             event = eventReader.nextEvent();
+            thumbnil="";
             continue;
           }
         }
