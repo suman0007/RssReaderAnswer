@@ -31,8 +31,15 @@ public class RssReaderServlet extends HttpServlet {
 		for (FeedMessage message : feed.getMessages()) {
 			urlsToSend.add(message);
 		}
-
+		
+		ArrayList<FeedMessage> headingNewsUrl = new ArrayList<FeedMessage>();
+		headingNewsUrl.add(urlsToSend.get(40));
+		headingNewsUrl.add(urlsToSend.get(11));
+		headingNewsUrl.add(urlsToSend.get(18));
+		
 		request.setAttribute("urls",urlsToSend);
+		request.setAttribute("testurls",headingNewsUrl);
+		
 		request.getRequestDispatcher("/views/rss.jsp")
 		.forward(request, response);
 
