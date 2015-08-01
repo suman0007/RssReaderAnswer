@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app 
-    xmlns="http://java.sun.com/xml/ns/javaee"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-    version="2.5">
- <servlet>
-   <servlet-name>readerServlet</servlet-name>
-   <servlet-class>com.rss.servlets.RssReaderServlet</servlet-class>
- </servlet>
- 
- <servlet-mapping>
-   <servlet-name>readerServlet</servlet-name>
-   <url-pattern>/getUrls</url-pattern>
- </servlet-mapping>
- 
- <welcome-file-list>
-   <welcome-file>/views/index.html</welcome-file>
- </welcome-file-list>
- 
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <servlet>
+    <servlet-name>readerServlet</servlet-name>
+    <servlet-class>com.rss.servlets.RssReaderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>readerServlet</servlet-name>
+    <url-pattern>/getUrls</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>com.rss.servlets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/validateLogin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>signupServlet</servlet-name>
+    <servlet-class>com.rss.servlets.SignUpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>signupServlet</servlet-name>
+    <url-pattern>/signUP</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>/views/login.html</welcome-file>
+  </welcome-file-list>
 </web-app>

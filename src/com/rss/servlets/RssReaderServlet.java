@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.rss.model.Feed;
-import com.rss.model.FeedMessage;
-import com.rss.read.RSSFeedParser;
+import com.rss.pojo.Feed;
+import com.rss.pojo.FeedMessage;
+import com.rss.service.RSSFeedParser;
 
 public class RssReaderServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
