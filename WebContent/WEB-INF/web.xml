@@ -16,14 +16,14 @@
     <servlet-name>loginServlet</servlet-name>
     <url-pattern>/validateLogin</url-pattern>
   </servlet-mapping>
- <!--  <servlet>
+  <servlet>
     <servlet-name>signupServlet</servlet-name>
     <servlet-class>com.rss.servlets.SignUpServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>signupServlet</servlet-name>
     <url-pattern>/signUP</url-pattern>
-  </servlet-mapping> -->
+  </servlet-mapping> 
   <welcome-file-list>
     <welcome-file>/views/login.html</welcome-file>
   </welcome-file-list>
